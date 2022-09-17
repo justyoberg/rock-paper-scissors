@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 32px;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  border: 2px solid red;
+}
+
+.score, .results {
+  font-size: 32px;
+}
+
+button {
+  height: 100px;
+  width: 150px;
+  border-radius: 16px;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  transition: 0.15s ease-in-out;
+  font-weight: bold;
+  font-size: 16px;
+  border: 3px solid rgb(59, 59, 59);
+}
+
+button:hover {
+  background-color: rgb(184, 184, 184);
+  color: rgb(100, 100, 100);
+  transform: scale(1.25);
+}
