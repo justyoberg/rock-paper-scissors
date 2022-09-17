@@ -4,7 +4,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: grey;
+  background: #757575;
+  background: -webkit-radial-gradient(center, #757575, #FFFFFF);
+  background: -moz-radial-gradient(center, #757575, #FFFFFF);
+  background: radial-gradient(ellipse at center, #757575, #FFFFFF);
   margin: 0;
   padding: 0;
 }
@@ -35,10 +38,11 @@ button {
   font-weight: bold;
   font-size: 16px;
   border: 3px solid rgb(59, 59, 59);
+  box-shadow: 12px 12px 24px black;
 }
 
 button:hover {
   background-color: rgb(184, 184, 184);
   color: rgb(100, 100, 100);
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
