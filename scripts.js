@@ -44,20 +44,10 @@ function checkWin(playerScore, compScore) {
 //   checkWin(score, compScore);
 // }
 
-const rock = document.createElement("button");
-const paper = document.createElement("button");
-const scissors = document.createElement("button");
+const btn = document.querySelectorAll(".rock, .paper, .scissors");
 
-rock.innerText = "Rock";
-paper.innerText = "Paper";
-scissors.innerText = "Scissors";
-
-document.body.appendChild(rock);
-document.body.appendChild(paper);
-document.body.appendChild(scissors);
-
-rock.addEventListener("click", () => playRound("rock", getComputerChoice));
-paper.addEventListener("click", () => playRound("paper", getComputerChoice));
-scissors.addEventListener("click", () => playRound("scissors", getComputerChoice));
+btn.forEach(function (button){
+  button.addEventListener("click", () => {playRound(button.textContent.toLowerCase(), getComputerChoice)});
+});
 
 // game();
